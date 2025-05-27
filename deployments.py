@@ -9,7 +9,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-with open(r'C:\Users\Lenovo\OneDrive\Desktop\project Deployment Excelr\Titanic_mode.pkl', 'rb') as file:
+with open(r'Titanic_mode.pkl', 'rb') as file:
     titanic_logr_model = pickle.load(file)
     
 def prediction(Pclass, Sex, Age, SibSp, Parch, Fare, Embarked):
